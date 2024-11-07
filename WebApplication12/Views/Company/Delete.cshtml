@@ -1,0 +1,12 @@
+﻿@model WebApplication12.Models.Company
+
+<h2>Delete Company</h2>
+<p>Are you sure you want to delete @Model.Name?</p>
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger btn-lg" style="border-radius: 5px; font-weight: bold;">
+        <i class="bi bi-trash-fill"></i> Confirm
+    </button>
+</form>
+
+
